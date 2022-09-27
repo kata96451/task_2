@@ -1,0 +1,19 @@
+{
+  "name": "task_2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "nodemonConfig": { "ignore": ["*.json"] },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx nodemon --verbose app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.1.2",
+    "nodemon": "^2.0.20"
+  }
+}
