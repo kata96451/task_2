@@ -47,7 +47,7 @@ const sort = (users, condition) => {
   return sortedUsers;
 }
 
-async function example() {
+async function main() {
   let data = JSON.parse(await fs.readFile(DB_PATH, { encoding: 'utf8' }));
   let condition = Object.keys(data.condition);
 
@@ -80,6 +80,8 @@ async function example() {
     } catch (err) {
       console.log(err)
     }
-  })
+  });
+
+  console.log(data.data, data.condition)
 }
-example();
+main();
